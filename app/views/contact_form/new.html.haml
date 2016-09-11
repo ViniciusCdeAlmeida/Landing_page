@@ -1,0 +1,8 @@
+.container
+	%h1 Contact_form
+		= simple_form @contact_form, :html =>; {:class =>; 'form_hor'} do |f|
+		= f.input :name, :required =>; true
+		= f.input :email, :required =>; true
+		= f.input :message, :as =>; :text, :required =>; false, :input_html =>; {:rows =>; 20}
+	.form-actions
+	=f.button :submit, 'Enviado', :class =>; "btn btn_primary"
